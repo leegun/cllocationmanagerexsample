@@ -12,6 +12,7 @@
 		F81EB1DB1C79A1FC002CC7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81EB1D91C79A1FC002CC7D6 /* Main.storyboard */; };
 		F81EB1DD1C79A1FC002CC7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81EB1DC1C79A1FC002CC7D6 /* Assets.xcassets */; };
 		F81EB1E01C79A1FC002CC7D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81EB1DE1C79A1FC002CC7D6 /* LaunchScreen.storyboard */; };
+		F81EB1E81C79A45C002CC7D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81EB1E71C79A45C002CC7D6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F81EB1DC1C79A1FC002CC7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F81EB1DF1C79A1FC002CC7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F81EB1E11C79A1FC002CC7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81EB1E71C79A45C002CC7D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81EB1E81C79A45C002CC7D6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		F81EB1C91C79A1FB002CC7D6 = {
 			isa = PBXGroup;
 			children = (
+				F81EB1E71C79A45C002CC7D6 /* CoreLocation.framework */,
 				F81EB1D41C79A1FC002CC7D6 /* CLLocationExsample */,
 				F81EB1D31C79A1FC002CC7D6 /* Products */,
 			);
@@ -96,6 +100,11 @@
 				TargetAttributes = {
 					F81EB1D11C79A1FC002CC7D6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
